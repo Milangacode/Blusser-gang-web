@@ -1,0 +1,270 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+/*fFONDO DE TERRARIA----------------------------------*/	
+.fondo1 {
+	margin: 0;
+	padding: 0;
+	background: url(../archivos/fondo-terraria.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 625px;
+}
+
+
+/*MENU | NAV---------------------------------------------*/
+.menu {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 70px;
+	background: rgba(41, 35, 76, 0.3);
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+}
+.menu span a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 19px;
+	list-style: none;
+	margin-right: 45px;
+	padding: 20px;
+	transition: all .1s;
+}
+.menu span a:hover {
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 50px;
+}
+.menu h1 {
+	color: #000;
+	justify-content: flex-start;
+	font-size: 27px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.unirme-al-sv {
+	position: absolute;
+	left: 20px;
+	top: -5px;
+	background: #Fff;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 70px;
+	transition: all .2s;
+}
+.fa-discord {
+	color: #04004C;
+	padding-right: 10px;
+}
+.unirme-al-sv:hover {
+	height: 85px;
+	padding-top: 10px;
+}
+
+/*TITULO | BLUSSER GANG-------------------------------------------*/
+.titulo {
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	text-align: center;	
+}
+.titulo h1 {
+	color: #fff;
+	font-size: 85px;
+}
+.titulo p {
+	font-size: 30px;
+	margin-top: -45px;
+	color: #fff;
+}
+.titulo i {
+	font-size: 70px;
+	color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: all .1s;
+}
+.titulo i:hover {
+	color: #413F70;
+}
+
+
+/*CONTENDOR 1----------------------------------------------------------*/
+.container-blue {
+	background: #04004C;
+	width: 100vw;
+	height: 120px;
+	padding: 15px;
+}
+.container-blue p {
+	text-align: center;
+	color: #Fff;
+}
+
+
+/*CONTENDOR 2-----------------------------------------------------------*/
+.container-darkgrey {
+	background: #2C2A55;
+	background-size: cover;
+	width: 100vw;
+	height: 300px;
+}
+.gif-discord {
+	display: flex;
+	height: 300px;
+	justify-content: center;
+	align-items: center;
+}
+.gif-discord img {
+
+}
+.gif-discord h1 {
+	color: #fff;
+	font-size: 20px;
+}
+
+
+/*CONTENDOR 3----------------------------------------------------------------*/
+.container-grey {
+	background: #413F70;
+	width: 100vw;
+	height: 1600px;
+}
+#reglas {
+	display: flex;
+	justify-content: center;
+	height: 1600px; 
+    align-items: center;
+}
+#reglas div {
+	height: 1300px;
+	width: 500px;
+	background: #39334D ;
+	text-align: center;
+	color: #fff;
+	padding: 60px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 0px #ABB2B9;
+}
+#reglas h1 {
+	width: 100%;
+	border-bottom: 5px solid #fff;
+	padding-bottom: 10px;
+}
+#reglas p {
+	font-size: 25px;
+	width: 100%;
+	margin-top: 50px;
+	border-bottom: 5px solid #fff;
+	padding-bottom: 10px;
+}
+
+
+/* FINAL | FOOTER ---------------------------------------------------------*/
+
+.footer {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	background: #04004C;
+	align-items: center;
+	padding: 5px;
+}
+.footer div h1 {
+	color: #Fff;
+	text-align: center;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+
+/*RESPONSIVE DESINGS----------------------------------------------*/
+@media only screen and (max-width: 768px) {
+	.fondo1 {
+		height: 640px;
+		background-attachment: scroll;
+	}
+	.menu {
+		position: static;
+		background: transparent;
+		
+	}
+	.menu span a {
+		background-color: rgba(0, 0, 0, 0.25);
+		border-radius: 25px;
+		padding: 10px; 
+		font-size: 23px;
+		text-align: center;
+		display: none;
+	}
+	.container-grey {
+		height: 1530px;
+	}
+	.gif-discord h1 {
+		font-size: 17px;
+	}
+	#reglas div {
+		height: 1220px;
+		box-shadow: none;
+		border: 3px solid #Fff;
+		border-radius: 50px;
+	}
+	#reglas h1 {
+		font-size: 20px;
+		border-bottom: 3px solid #Fff;
+	}
+	#reglas p {
+		font-size: 16px;
+		border-bottom: 3px solid #Fff;
+	}
+	.Inicio {
+		display: none;
+	}
+	.titulo {
+		top: 33%;
+	}
+	.unirme-al-sv {
+		height: 65px;
+		left: calc(50% - 146px);
+		background: #Fff;
+		color: #04004C;
+		margin-top: 530px;
+		border-radius: 50px;
+	}
+	.container-blue p {
+		font-size: 16px;
+		text-align: center;
+		padding: 50px;
+		margin-left: -20px;
+		padding-top: 0px;
+	}
+	.footer div h1 {
+		font-size: 14px;
+	}
+}
+
+/*RESPONSIVE 2----------------------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.fondo1 {
+		background-attachment: scroll;
+	}
+	.titulo {
+		top: 27%;
+	}
+		.unirme-al-sv {
+		height: 70px;
+		left: calc(50% - 146px);
+		background: #Fff;
+		color: #04004C;
+		margin-top: 530px;
+		border-radius: 50px;
+	}
+}
